@@ -1,0 +1,25 @@
+/* NAV */
+.Navbar {
+  background-color: lightpink;
+  color: #242105;
+  text-align: center;
+  min-height: 5vh;
+  max-width: 80vw;
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10vw;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.Navbar-Link {
+  color:black;
+  font-family: "DM Serif Text", serif;
+  text-decoration: none;
+  padding-left: 2.5vw;
+  padding-right: 2.5vw;
+  font-style: bold;
+}

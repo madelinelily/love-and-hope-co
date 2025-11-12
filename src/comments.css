@@ -1,0 +1,18 @@
+/* COMMENTS */
+.comment-box {
+    overflow-wrap: normal;
+    max-width: 40vw;
+}
+
+.comment-container {
+    max-width: 40vw;
+}
+
+.comment-header {
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.splide__slide {
+    align-content: center;
+}

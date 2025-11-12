@@ -1,0 +1,55 @@
+.resources-page {
+    font-family: "Bellota Text", sans-serif;
+}
+
+.resources-container {
+    background-color: white;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+    margin-left: 10vw;
+    border-radius: 10px;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    gap: 4vw;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.body {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    margin: 2vh;
+    width: 35vw;
+    border: solid 1px #181d1f28;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.vendor {
+    text-align: right;
+}
+
+.body-link {
+    color: black;
+    font-size: larger;
+}
+.body-title {
+    min-width: 35vw;
+    background-color: aquamarine;
+    text-align: center;
+}
+.body-text {
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    margin-bottom: 2vh;
+}
+
+h3 {
+    margin-bottom: 1vh;
+}

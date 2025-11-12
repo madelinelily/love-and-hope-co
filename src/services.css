@@ -1,0 +1,144 @@
+.services-page {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  max-width: 80vw;
+  border-radius: 10px;
+  margin-left: 10vw;
+  margin-top: 2.5vh;
+}
+.services-container {
+    margin-top: 5vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Bellota Text", sans-serif;
+    gap: 5vw;
+}
+
+.title {
+  background-color: aquamarine;
+  font-size: larger;
+  font-weight: 700;
+  width: 100%;
+  margin-bottom: 2.5vh;
+}
+
+.grids-container {
+  max-width: 75%;
+  border: solid #181d1f28 1px;
+  border-radius: 10px;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 1vh;
+}
+.services-grid-indiana {
+    height: 580px;
+    width: 690px;
+    padding-bottom: 5vh;
+}
+.services-grid-michigan {
+    height: 430px;
+    width: 690px;
+    padding-bottom: 2.5vh;
+}
+
+.services-text {
+  height: 100%;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid #181d1f28 1px;
+  border-radius: 10px;
+  padding: .5vw;
+  text-align: left;
+  margin-bottom: .5vh;
+}
+.services-offered {
+  background-color: aquamarine;
+  border-radius: 10px;
+  padding-top: .5vh;
+  padding-bottom: .5vh;
+  width: 100%;
+  text-align: center;
+}
+.services-body {
+  font-size: larger;
+  text-align: left;
+}
+.service-header {
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+.service {
+  padding: .25vh;
+  padding-left: .25vw;
+  padding-right: .25vw;
+  margin-top: 1vh;
+  background-color: rgb(255, 209, 157);
+  border: solid rgb(170, 140, 105) 1px;
+  border-radius: 10px;
+  width: 25vw;
+}
+
+.list {
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.button {
+  max-width: 20vw;
+  margin-bottom: 2vh;
+}
+
+
+
+
+
+
+/* AG STYLING */
+.ag-body-vertical-scroll {
+  display: none;
+}
+.ag-body-horizontal-scroll {
+  display: none;
+}
+.ag-body-viewport.ag-layout-normal {
+  overflow-y: hidden;
+}
+.ag-force-vertical-scroll {
+  overflow-y: hidden !important;
+}
+.ag-force-horizontal-scroll {
+  overflow-y: hidden !important;
+}
+.ag-row {
+    height: 10px;
+}
+.ag-theme-quartz .ag-header {
+    font-family: cursive;
+}
+.ag-theme-quartz .ag-header-group-cell {
+    font-weight: normal;
+    font-size: 22px;
+}
+.ag-theme-quartz .ag-header-cell {
+    font-size: 18px;
+}
+.ag-header-cell-label {
+    text-overflow: clip;
+    overflow: visible;
+    white-space: normal;
+    justify-content: center;
+}
