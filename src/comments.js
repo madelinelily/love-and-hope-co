@@ -21,6 +21,7 @@ const Comments = () => {
                         name: ic[0],
                         comment: ic[1]
                     })
+                    return null;
                 })
                 setImportedComments(parsedComments);})
     return(
