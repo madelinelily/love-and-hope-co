@@ -1,8 +1,6 @@
 /* eslint-disable no-implied-eval */
 import './footer-mobile.css';
 import IconButton from '@mui/material/IconButton';
-import knotlogo from '../theknot2025.png';
-import iawpologo from '../IAWPG-logo.png';
 import { useState } from 'react';
 
 
