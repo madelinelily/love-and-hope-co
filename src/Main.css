@@ -16,8 +16,9 @@
   background-color: rgb(200, 255, 255);
   border-radius: 10px;
   max-width: 80vw;
-  margin: 15px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  margin-top: 1.5vh;
+  margin-bottom: 1.5vh;
 }
 .Main-About-Italics {
   text-align: center;
@@ -63,8 +64,7 @@
   border-radius: 2px;
 }
 .Main-Area {
-  max-width: 80vw;
-  margin-left: 10vw;
+  max-width: 100vw;
   overflow: hidden;
   display: flex;
   justify-content: center;
