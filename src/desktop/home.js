@@ -1,4 +1,4 @@
-import logo from './love-and-hope-co-transparent-logo.png';
+import logo from '../love-and-hope-co-transparent-logo.png';
 import { Button } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Slideshow from './Slideshow.js';

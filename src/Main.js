@@ -1,22 +1,27 @@
 import './Main.css';
-import './navbar.css';
+import './desktop/navbar.css';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import Home from './Home.js';
-import Footer from './footer.js';
-import About from './about.js';
-import Services from './services.js';
-import Resources from './resources.js';
-import Contact from './contact.js';
+import Home from './desktop/home.js';
+import Footer from './desktop/footer.js';
+import About from './desktop/about.js';
+import Services from './desktop/services.js';
+import Resources from './desktop/resources.js';
+import Contact from './desktop/contact.js';
+
+import FooterMobile from './mobile/footer-mobile.js'
+import HomeMobile from './mobile/home-mobile.js'
 
 
 function Main() {
+  const isDesktop = window.innerWidth > 500
+  const navbarClass = isDesktop ? "Navbar" : "Navbar-mobile"
   return (
     <div style={{overflowy:'hidden', maxwidth:'100vw'}}>
       <div className="background">
         <div className="page">
           <BrowserRouter>
             {/* Navigation */}
-            <nav className="Navbar">
+            <nav className={navbarClass}>
               <Link to="/" className="Navbar-Link">Home</Link>
               <Link to="/about" className="Navbar-Link">About</Link>
               <Link to="/services" className="Navbar-Link">Services</Link>
@@ -26,7 +31,7 @@ function Main() {
 
             {/* Routes */}
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/" element={isDesktop? <Home /> : <HomeMobile/>} />
               <Route path="/about" element={<About />} />
               <Route path="/services" element={<Services />} />
               <Route path="/resources" element={<Resources />} />
@@ -35,7 +40,7 @@ function Main() {
           </BrowserRouter>
         </div>
       </div>
-      <Footer />
+      {isDesktop? <Footer /> : <FooterMobile />}
     </div>
   );
 }

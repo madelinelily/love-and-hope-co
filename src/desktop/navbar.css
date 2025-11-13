@@ -15,6 +15,21 @@
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
+.Navbar-mobile {
+  background-color: lightpink;
+  color: #242105;
+  text-align: center;
+  min-height: 5vh;
+  min-width: 100vw;
+  font-size: small;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
 .Navbar-Link {
   color:black;
   font-family: "DM Serif Text", serif;
