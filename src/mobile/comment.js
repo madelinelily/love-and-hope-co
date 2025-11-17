@@ -1,8 +1,8 @@
-import './comments.css';
+import './comments-mobile.css';
 
 const CommentMobile = (name, comment) => {
     return(
-        <div className="comment-box">
+        <div className="comment-box-mobile">
             <div>{comment}</div>
             <br></br>
             <br></br>

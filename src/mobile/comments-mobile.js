@@ -4,7 +4,7 @@ import CommentMobile from './comment.js';
 import '@splidejs/splide/css/sea-green';
 import * as Papa from 'papaparse';
 import { useState } from 'react';
-import './comments.css';
+import './comments-mobile.css';
 
 //TODO: NEED NEW IMAGES
 
@@ -25,8 +25,8 @@ const CommentsMobile = () => {
                 })
                 setImportedComments(parsedComments);})
     return(
-        <div className="comment-container">
-            <h1 className="comment-header">What People Say</h1>
+        <div className="comment-container-mobile">
+            <h1 className="comment-header-mobile">What People Say</h1>
             <Splide aria-label="Comments">
                 {imported_comments.map((ic, index) => 
                     <SplideSlide key={index}>

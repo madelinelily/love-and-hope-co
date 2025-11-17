@@ -2,7 +2,7 @@ import logo from '../love-and-hope-co-transparent-logo.png';
 import { Button } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import SlideshowMobile from './slideshow-mobile.js';
-import CommentsMobile from './comments.js';
+import CommentsMobile from './comments-mobile.js';
 import { Link } from 'react-router-dom';
 // Default theme
 import '@splidejs/react-splide/css';

@@ -1,14 +1,14 @@
 /* COMMENTS */
-.comment-box {
+.comment-box-mobile {
     overflow-wrap: normal;
+    max-width: 80vw;
+}
+
+.comment-container-mobile {
     max-width: 90vw;
 }
 
-.comment-container {
-    max-width: 40vw;
-}
-
-.comment-header {
+.comment-header-mobile {
     padding: 0px;
     margin-bottom: 0px;
 }
