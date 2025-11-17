@@ -29,9 +29,6 @@ const FooterMobile = () => {
                             <div className="footer-contact-container">
                                 <a href="/contact">Contact</a>
                             </div>
-                            <div className="footer-faq-container">
-                                <a href="/faqs">FAQs</a>
-                            </div>
                         </div>
                     </div>
                     <div className="footer-group-email">

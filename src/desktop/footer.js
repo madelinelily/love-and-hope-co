@@ -29,10 +29,7 @@ const Footer = () => {
                     <div className="footer-group">
                         <div className="footer-contact-faq-container">
                             <div className="footer-contact-container">
-                                <a href="/contact">Contact</a>
-                            </div>
-                            <div className="footer-faq-container">
-                                <a href="/faqs">FAQs</a>
+                                <a href="/contact">Questions?</a>
                             </div>
                         </div>
                     </div>
