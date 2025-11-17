@@ -4,7 +4,6 @@ import './services-mobile.css';
 import * as Papa from 'papaparse';
 import { useState } from 'react';
 import { AllCommunityModule, ModuleRegistry, themeQuartz } from 'ag-grid-community'; 
-import { AgGridReact } from 'ag-grid-react'; // React Data Grid Component
 import { Button } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Link } from 'react-router-dom';
@@ -14,17 +13,6 @@ import michigan from '../michigan-prices.png'
 ModuleRegistry.registerModules([AllCommunityModule]);
 
 const csvFilePath = './fees.csv';
-
-const gridTheme = themeQuartz.withParams({
-    headerHeight: '70px',
-    overflowWrap: 'normal',
-    headerTextColor: '#9b7278ff',
-    headerBackgroundColor: 'lightpink',
-    headerCellHoverBackgroundColor: '#d0b6ffff',
-    headerCellMovingBackgroundColor: '#9280b3ff',
-    fontFamily: "Bellota Text",
-    fontSize: 'large'
-});
 
 const buttonTheme = createTheme({
   palette: {
@@ -52,57 +40,6 @@ const buttonTheme = createTheme({
 });
 
 const ServicesMobile = () => {
-    const [indianaFees, setIndianaFees] = useState([]);
-    const [michiganFees, setMichiganFees] = useState([]);
-    const [columns, setColumns] = useState([]);
-        if(indianaFees.length === 0){
-            fetch( csvFilePath )
-                .then( response => response.text() )
-                .then( responseText => { var data = Papa.parse(responseText);
-                    var state = 0;
-                    var cols = [];
-                    var parsedIFees = [];
-                    var parsedMFees = [];
-                    data.data.map((fee) => {
-                        if(fee[0] === "City") {
-                            fee.map((c) => {
-                                var width = 130;
-                                if(c === "City"){
-                                    width = 175
-                                }
-                                cols.push({field: c, width:width, headerClass:"grid-header"})
-                            });
-                        }
-                        else if(fee[0] === "Indiana"){
-                            state = 1;
-                        }
-                        else if(fee[0] === "Michigan"){
-                            state = 2;
-                        }
-                        else{
-                            var currentfee = {
-                                    "City": `${fee[0]}`,
-                                    "Just Make it Legal": `${fee[1]}`,
-                                    "Simple and Sweet": `${fee[2]}`,
-                                    "Love Story": `${fee[3]}`,
-                                    "Rehearsal": `+${fee[4]}`
-                                }
-                            if(state === 1){
-                                parsedIFees.push(currentfee)
-                            } else if (state === 2){
-                                parsedMFees.push(currentfee)
-                            }
-                        }
-                    })
-                    console.log(cols);
-                    console.log(parsedIFees);
-                    console.log(parsedMFees);
-                    setColumns(cols);
-                    setIndianaFees(parsedIFees);
-                    setMichiganFees(parsedMFees);
-        })
-        }
-        
     return(
         <div className="services-page-mobile">
             <div className="services-container-mobile">
