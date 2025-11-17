@@ -1,8 +1,8 @@
-.resources-page {
+.resources-page-mobile {
     font-family: "Bellota Text", sans-serif;
 }
 
-.resources-container {
+.resources-container-mobile {
     background-color: white;
     margin-top: 2.5vh;
     margin-bottom: 2.5vh;
@@ -10,16 +10,15 @@
     border-radius: 10px;
     width: 80vw;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 4vw;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-.body {
+.body-mobile {
     padding-top: 2vh;
     padding-bottom: 2vh;
     margin: 2vh;
-    width: 35vw;
     border: solid 1px #181d1f28;
     border-radius: 10px;
     display: flex;
@@ -27,23 +26,24 @@
 }
 
 .vendor {
-    text-align: right;
+    text-align: center;
 }
 
-.body-link {
+.body-link-mobile {
     color: black;
     font-size: larger;
 }
-.body-title {
+.body-title-mobile {
     min-width: 35vw;
     background-color: aquamarine;
     text-align: center;
 }
-.body-text {
+.body-text-mobile {
     padding-left: 2.5vw;
     padding-right: 2.5vw;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 h2 {

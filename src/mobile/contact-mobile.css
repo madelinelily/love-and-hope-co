@@ -1,4 +1,4 @@
-.contact-container {
+.contact-container-mobile {
     font-family: "Bellota Text", sans-serif;
     width: 80vw;
     margin-left: 10vw;
@@ -11,45 +11,45 @@
     align-items: center;
 }
 
-.contact-header {
+.contact-header-mobile {
     margin-top: 2.5vh;
     background-color: rgb(255, 209, 157);
     min-width: 100%;
     text-align: center;
 }
 
-.contact-top {
+.contact-top-mobile {
     display: flex;
     flex-direction: row;
 }
-.contact-info {
+.contact-info-mobile {
     display: flex;
     flex-direction: column;
 }
-.contact-top-component {
-    width: 25vw;
+.contact-top-component-mobile {
+    width: 70vw;
     min-height: 50px;
     padding: 1vw;
     display: flex;
     flex-direction: column;
 }
 
-.contact-inputs {
+.contact-inputs-mobile {
     justify-content: center;
     align-items: center;
 }
-.contact-dropdowns {
+.contact-dropdowns-mobile {
     justify-content: center;
     align-items: center;
 }
 
-.contact-input {
+.contact-input-mobile {
     font-family: "Bellota Text", sans-serif;
     height: 25px;
     border: solid 1px #78c0b0ff;
     border-radius: 4px;
 }
-.contact-input:focus {
+.contact-input-mobile:focus {
     font-family: "Bellota Text", sans-serif;
     height: 25px;
     border: solid 1px rgb(121, 224, 200);
@@ -57,24 +57,26 @@
     outline: none !important;
 }
 
-.package-text {
+.package-text-mobile {
     display: flex;
     flex-direction: row;
     gap: 3px;
 }
 
-.message-body {
-    margin-left: 10vw;
+.message-body-mobile {
+    margin-left: 1vw;
     margin-bottom: 2.5vh;
 }
 
-.services-link {
+.services-link-mobile {
     color:black;
     font-weight: 700;
+    min-width: 30vw;
 }
 
-.body-input {
+.body-input-mobile {
     min-height: 150px;
+    width: 70vw;
 }
 
 .submit-button {

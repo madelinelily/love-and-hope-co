@@ -75,6 +75,7 @@
     flex-direction: column;
     text-align: center;
     min-width: 20vw;
+    max-width: 25vw;
 }
 .reviews-title {
     font-size: larger;

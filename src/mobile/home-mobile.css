@@ -5,6 +5,9 @@
   font-style: bold;
   font-size: xx-large;
 }
+.home-mobile-logo-image {
+  max-width: 80vw;
+}
 .home-mobile-About {
   text-align: center;
   font-family: "Bellota Text", sans-serif;

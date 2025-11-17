@@ -2,6 +2,7 @@ import './about.css';
 import carol from './carol.png';
 import ReviewWidget from './reviewwidget.js'
 const About = () => {
+  console.log(`isdesktop`)
     return(
         <div>
             <style>

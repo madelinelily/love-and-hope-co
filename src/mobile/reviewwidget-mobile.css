@@ -1,5 +1,5 @@
-.widget-container {
-    max-width: 25vw;
+.widget-container-mobile {
+    min-width: 62.5vw;
     padding: 2.5vh;
     border: solid 2px lightpink;
     border-radius: 10px;
@@ -38,7 +38,7 @@
 }
 
 .weddingWireWidgetReview__post {
-    font-size: smaller;
+    font-size: large;
     padding-left: 1vw;
     padding-right: 1vw;
 }

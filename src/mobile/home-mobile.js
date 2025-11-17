@@ -39,7 +39,7 @@ function HomeMobile() {
       </style>
       <div className="home-mobile-Logo">
         <div>
-          <img src={logo} className="home-mobile-logo" alt="logo" />
+          <img src={logo} className="home-mobile-logo-image" alt="logo" />
         </div>
         <div>
           Est. November 2020

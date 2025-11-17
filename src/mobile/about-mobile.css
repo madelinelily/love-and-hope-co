@@ -1,10 +1,10 @@
-.about {
+.about-mobile {
     font-family: "Bellota Text", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.about-banner {
+.about-banner-mobile {
     text-align: center;
     font-weight: 700;
     letter-spacing: 3vw;
@@ -12,7 +12,7 @@
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-.about-body {
+.about-body-mobile {
     font-size: large;
     margin-left: 10vw;
     margin-right: 10vw;
@@ -26,7 +26,7 @@
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-.about-opener {
+.about-opener-mobile {
     padding-bottom: 2vh;
     border: solid 1px;
     border-left: 0;
@@ -34,34 +34,34 @@
     border-top: 0;
 }
 
-.about-carol {
+.about-carol-mobile {
     display: flex;
     flex-direction: row;
 }
-.about-carol-text-container {
+.about-carol-text-container-mobile {
     display: flex;
     flex-direction: column;
     min-height: 50%;
 }
 
-.carol-image {
-    border-radius: 128px;
-    max-width: 256px;
-    max-height: 256px;
+.carol-image-mobile {
+    border-radius: 100px;
+    max-width: 200px;
+    max-height: 200px;
 }
 
-.about-main {
+.about-main-mobile {
     display: flex;
     flex-direction: row;
     padding-top: 2vh;
     padding-bottom: 2vh;
 }
-.about-main-text {
-    max-width: 60%;
+.about-main-text-mobile {
+    max-width: 100%;
     padding-right: 2vw;
 }
 
-.weddingwire-widget {
+.weddingwire-widget-mobile {
     border: solid;
     text-align: center;
     color: red;
@@ -70,13 +70,13 @@
     align-items: center;
     min-height: 95%;
 }
-.reviews-container {
+.reviews-container-mobile {
     display: flex;
     flex-direction: column;
     text-align: center;
-    min-width: 20vw;
+    min-width: 100%;
 }
-.reviews-title {
+.reviews-title-mobile {
     font-size: larger;
     font-weight: 700;
     text-align: center;
@@ -88,6 +88,6 @@
     border-top: 0;
 }
 
-.loads-of-love {
+.loads-of-love-mobile {
     font-size: larger;
 }

@@ -1,4 +1,4 @@
-import './reviewwidget.css';
+import './reviewwidget-mobile.css';
 
 const ReviewWidgetMobile = () => {
 
@@ -31,7 +31,7 @@ const ReviewWidgetMobile = () => {
 
 
     return(
-        <div className="widget-container">
+        <div className="widget-container-mobile">
 		    <style>
                 @import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=DM+Serif+Text:ital@0;1&family=MonteCarlo&display=swap');
             </style>

@@ -1,6 +1,6 @@
 /* eslint-disable no-implied-eval */
 /* eslint-disable array-callback-return */
-import './services.css';
+import './services-mobile.css';
 import * as Papa from 'papaparse';
 import { useState } from 'react';
 import { AllCommunityModule, ModuleRegistry, themeQuartz } from 'ag-grid-community'; 
@@ -8,6 +8,8 @@ import { AgGridReact } from 'ag-grid-react'; // React Data Grid Component
 import { Button } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Link } from 'react-router-dom';
+import indiana from '../indiana-prices.png'
+import michigan from '../michigan-prices.png'
 
 ModuleRegistry.registerModules([AllCommunityModule]);
 
@@ -102,13 +104,13 @@ const ServicesMobile = () => {
         }
         
     return(
-        <div className="services-page">
-            <div className="services-container">
+        <div className="services-page-mobile">
+            <div className="services-container-mobile">
                 <style>
                     @import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=DM+Serif+Text:ital@0;1&family=MonteCarlo&display=swap');
                 </style>
-                <div className="services-text">
-                    <div className="services-offered">
+                <div className="services-text-mobile">
+                    <div className="services-offered-mobile">
                         <h1>SERVICES OFFERED</h1>
                     </div>
                     <div>
@@ -131,19 +133,19 @@ const ServicesMobile = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="services-body">
-                        <div className="service legal">
-                            <h3 className="service-header"><u>Just Make it Legal</u></h3>
-                            <ul className="list">
+                    <div className="services-body-mobile">
+                        <div className="service-mobile legal">
+                            <h3 className="service-header-mobile"><u>Just Make it Legal</u></h3>
+                            <ul className="list-mobile">
                                 <li>
                                     License signing only service
                                 </li>
                             </ul>
                         </div>
                         <br/>
-                        <div className="service simple">
-                            <h3 className="service-header"><u>"Simple and Sweet" Elopement or Mini-Ceremony</u></h3>
-                            <ul className="list">
+                        <div className="service-mobile simple">
+                            <h3 className="service-header-mobile"><u>"Simple and Sweet" Elopement or Mini-Ceremony</u></h3>
+                            <ul className="list-mobile">
                                 <li>
                                     7 - 10 minute simple ceremony​
                                 </li>
@@ -171,9 +173,9 @@ const ServicesMobile = () => {
                             </ul>
                         </div>
                         <br/>
-                        <div className="service story">
-                            <h3 className="service-header"><u>"Our Love Story" Custom Ceremony</u></h3>
-                            <ul className="list">
+                        <div className="service-mobile story">
+                            <h3 className="service-header-mobile"><u>"Our Love Story" Custom Ceremony</u></h3>
+                            <ul className="list-mobile">
                                 <li>
                                     We'll work together to develop the perfect ceremony for your special day.
                                 </li>
@@ -191,40 +193,30 @@ const ServicesMobile = () => {
                     </div>
                     <h3>Rehearsal add-on available!</h3>
                 </div>
-                <div className="grids-container">
-                    <div className="title">
+                <div className="grids-container-mobile">
+                    <div className="title-mobile">
                         Indiana
                     </div>
-                    <div className="services-grid-indiana">
-                        <AgGridReact
-                            rowData={indianaFees}
-                            columnDefs={columns}
-                            rowHeight={30}
-                            theme={gridTheme}
-                        />
+                    <div className="services-grid-indiana-mobile">
+                        <a href={indiana} download="love-and-hope-co-indiana-prices.png">Indiana Prices</a>
                     </div>
-                    <div className="title">
+                    <div className="title-mobile">
                         Michigan
                     </div>
-                    <div className="services-grid-michigan">
-                        <AgGridReact
-                            rowData={michiganFees}
-                            columnDefs={columns}
-                            rowHeight={30}
-                            theme={gridTheme}
-                        />
+                    <div className="services-grid-michigan-mobile">
+                        <a href={michigan} download="love-and-hope-co-michigan-prices.png">Michigan Prices</a>
                     </div>
                     (travel fees included)
                 </div>
             </div>
-            <div className="buttons-container">
+            <div className="buttons-container-mobile">
                 <ThemeProvider theme={buttonTheme}>
-                    <div className="button">
+                    <div className="button-mobile">
                         <Button variant="contained"onClick={() => {setTimeout('window.location.href="https://www.honeybook.com/widget/with_love_hope_co_170915/cf_id/5ff36b6e33d8122c4fc60535"', 0)}}>Ready to book your service?</Button>
                     </div>
-                    <div className="button">
+                    <div className="button-mobile">
                         <Link to="/contact">
-                            <Button variant="contained" className="button">Need additional info?</Button>
+                            <Button variant="contained" className="button-mobile">Need additional info?</Button>
                         </Link>
                     </div>
                 </ThemeProvider>

@@ -1,4 +1,4 @@
-import './contact.css'
+import './contact-mobile.css'
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import InputLabel from '@mui/material/InputLabel';
@@ -148,20 +148,16 @@ const ContactMobile = () => {
             <div className="contact-header">
                 <h1><b>Send us a message!</b></h1>
             </div>
-            <div className="contact-main">
-                <div className="contact-top">
-                    <div className="contact-info contact-inputs">
-                        <div className="contact-top-component">
-                            Your email
-                            <input type="text" className="contact-input" value={email} onChange={handleEmailChange}/>
-                        </div>
-                        <div className="contact-top-component">
-                            Subject
-                            <input type="text" className="contact-input" value={subject} onChange={handleSubjectChange}/>
-                        </div>
-                    </div>
-                    <div className="contact-info contact-dropdowns">
-                        <div className="contact-top-component">
+            <div className="contact-main-mobile">
+                <div className="contact-top-component-mobile">
+                    Your email
+                    <input type="text" className="contact-input" value={email} onChange={handleEmailChange}/>
+                </div>
+                <div className="contact-top-component-mobile">
+                    Subject
+                    <input type="text" className="contact-input" value={subject} onChange={handleSubjectChange}/>
+                </div>
+                <div className="contact-top-component-mobile">
                             Which state are you contacting about?
                             <Box sx={{ minWidth: 120, paddingBottom:'2.5vh' }}>
                                 <FormControl fullWidth variant="standard">
@@ -229,36 +225,36 @@ const ContactMobile = () => {
                                         <></>
                             }
                             
-                        </div>
-                        <div className="contact-top-component">
-                            <div className="package-text">
-                                Which <a href="/services" className="services-link"> wedding package </a> are you contacting about?
-                            </div>
-                            
-                            <Box sx={{ minWidth: 120, paddingBottom:'2.5vh' }}>
-                                <FormControl fullWidth variant="standard">
-                                    <InputLabel id="demo-simple-select-label">Wedding Package</InputLabel>
-                                    <Select
-                                    labelId="demo-simple-select-label"
-                                    id="demo-simple-select"
-                                    value={type}
-                                    label="Package"
-                                    onChange={handleTypeChange}
-                                    input={<BootstrapInput />}
-                                    >
-                                    <MenuItem value={"Just Make It Legal"}>Just Make It Legal</MenuItem>
-                                    <MenuItem value={"Simple and Sweet"}>Simple and Sweet</MenuItem>
-                                    <MenuItem value={"Our Love Story"}>Our Love Story</MenuItem>
-                                    <MenuItem value={"Other"}>Other/Unsure</MenuItem>
-                                    </Select>
-                                </FormControl>
-                            </Box>
-                        </div>
-                    </div>
                 </div>
-                <div className="contact-info message-body">
+                <div className="contact-top-component-mobile">
+                    <div className="package-text-mobile">
+                        Which <a href="/services" className="services-link-mobile"> wedding package </a> are you
+                    </div>
+                    <div className="package-text-mobile">
+                        contacting about?
+                    </div>
+                    <Box sx={{ minWidth: 120, paddingBottom:'2.5vh' }}>
+                        <FormControl fullWidth variant="standard">
+                            <InputLabel id="demo-simple-select-label">Wedding Package</InputLabel>
+                            <Select
+                            labelId="demo-simple-select-label"
+                            id="demo-simple-select"
+                            value={type}
+                            label="Package"
+                            onChange={handleTypeChange}
+                            input={<BootstrapInput />}
+                            >
+                            <MenuItem value={"Just Make It Legal"}>Just Make It Legal</MenuItem>
+                            <MenuItem value={"Simple and Sweet"}>Simple and Sweet</MenuItem>
+                            <MenuItem value={"Our Love Story"}>Our Love Story</MenuItem>
+                            <MenuItem value={"Other"}>Other/Unsure</MenuItem>
+                            </Select>
+                        </FormControl>
+                    </Box>
+                </div>
+                <div className="contact-info message-body-mobile">
                     Message
-                    <textarea className="contact-input body-input"  value={body} onChange={handleBodyChange}/>
+                    <textarea className="contact-input body-input-mobile"  value={body} onChange={handleBodyChange}/>
                 </div>
                 <div className="submit-button">
                     <ThemeProvider theme={buttonTheme}>
