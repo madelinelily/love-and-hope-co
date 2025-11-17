@@ -1,9 +1,7 @@
 /* eslint-disable no-implied-eval */
 /* eslint-disable array-callback-return */
 import './services-mobile.css';
-import * as Papa from 'papaparse';
-import { useState } from 'react';
-import { AllCommunityModule, ModuleRegistry, themeQuartz } from 'ag-grid-community'; 
+import { AllCommunityModule, ModuleRegistry} from 'ag-grid-community'; 
 import { Button } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Link } from 'react-router-dom';
@@ -11,9 +9,6 @@ import indiana from '../indiana-prices.png'
 import michigan from '../michigan-prices.png'
 
 ModuleRegistry.registerModules([AllCommunityModule]);
-
-const csvFilePath = './fees.csv';
-
 const buttonTheme = createTheme({
   palette: {
     primary: {
